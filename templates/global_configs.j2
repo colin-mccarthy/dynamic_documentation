@@ -1,7 +1,7 @@
 
 | NTP_SERVER | 
 | ---------- |
-{% for ip in [ntp_servers]  %}
+{% for ip in [ntp_servers] | natural_sort %} 
 | {{ ip }} | 
 {% endfor %}/
 
